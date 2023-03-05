@@ -75,7 +75,35 @@ const app = {
           path: "./assets/musics/tu-tinh-2.mp3",
           image:
           "./assets/img/tu-tinh-2.jpg"
-        }
+        },
+		{
+			name: "Anh tự do nhưng cô đơn",
+			singer: "Trung Quân Idol",
+			path: "./assets/musics/anh-tu-do-nhung-co-don.mp3",
+			image:
+			"./assets/anh-tu-do-nhung-co-don.jpg"
+		},
+		{
+			name: "Yêu người có ước mơ",
+			singer: "Bùi Trường Linh",
+			path: "./assets/musics/yeu-nguoi-co-uoc-mo.mp3",
+			image:
+			"./assets/yeu-nguoi-co-uoc-mo.jpg"
+		},
+		{
+			name: "Dù cho mai về sau",
+			singer: "Bùi Trường Linh",
+			path: "./assets/musics/du-cho-mai-ve-sau.mp3",
+			image:
+			"./assets/du-cho-mai-ve-sau.jpg"
+		},
+		{
+			name: "Đường tôi chở em về",
+			singer: "Bùi Trường Linh",
+			path: "./assets/musics/duong-toi-cho-em-ve.mp3",
+			image:
+			"./assets/duong-toi-cho-em-ve.jpg"
+		},
     ],
 
 	setConfig: function(key, value) {
