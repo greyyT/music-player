@@ -26,56 +26,56 @@ const app = {
 		isRepeated: false,
 	},
 
-    songs: [
-        {
-          name: "Ai chung tình được mãi",
-          singer: "Trung Quân Idol",
-          path: "./assets/musics/ai-chung-tinh-duoc-mai.mp3",
-          image: "./assets/img/ai-chung-tinh-duoc-mai.jpg"
-        },
-        {
-          name: "Bao tiền một mớ bình yên",
-          singer: "14 Casper",
-          path: "./assets/musics/bao-tien-mot-mo-binh-yen.mp3",
-          image:
-            "./assets/img/bao-tien-mot-mo-binh-yen.jpg"
-        },
-        {
-          name: "Đã sai từ lúc đầu",
-          singer: "Trung Quân Idol | Bùi Anh Tuấn",
-          path:
-            "./assets/musics/da-sai-tu-luc-dau.mp3",
-          image: "./assets/img/da-sai-tu-luc-dau.jpg"
-        },
-        {
-          name: "Đi qua mùa hạ",
-          singer: "Thái Đinh",
-          path: "./assets/musics/di-qua-mua-ha.mp3",
-          image:
-            "./assets/img/di-qua-mua-ha.jpg"
-        },
-        {
-          name: "Phố không em",
-          singer: "Thái Đinh",
-          path: "./assets/musics/pho-khong-em.mp3",
-          image:
-            "./assets/img/pho-khong-em.jpg"
-        },
-        {
-          name: "Rồi ta sẽ ngắm pháo hoa cùng nhau",
-          singer: "O.lew",
-          path:
-            "./assets/musics/roi-ta-se-ngam-phao-hoa-cung-nhau.mp3",
-          image:
-            "./assets/img/roi-ta-se-ngam-phao-hoa-cung-nhau.jpg"
-        },
-        {
-          name: "Tự tình 2",
-          singer: "Trung Quân Idol",
-          path: "./assets/musics/tu-tinh-2.mp3",
-          image:
-          "./assets/img/tu-tinh-2.jpg"
-        },
+	songs: [
+		{
+			name: "Ai chung tình được mãi",
+			singer: "Trung Quân Idol",
+			path: "./assets/musics/ai-chung-tinh-duoc-mai.mp3",
+			image: "./assets/img/ai-chung-tinh-duoc-mai.jpg"
+		},
+		{
+			name: "Bao tiền một mớ bình yên",
+			singer: "14 Casper",
+			path: "./assets/musics/bao-tien-mot-mo-binh-yen.mp3",
+			image:
+			"./assets/img/bao-tien-mot-mo-binh-yen.jpg"
+		},
+		{
+			name: "Đã sai từ lúc đầu",
+			singer: "Trung Quân Idol | Bùi Anh Tuấn",
+			path:
+			"./assets/musics/da-sai-tu-luc-dau.mp3",
+			image: "./assets/img/da-sai-tu-luc-dau.jpg"
+		},
+		{
+			name: "Đi qua mùa hạ",
+			singer: "Thái Đinh",
+			path: "./assets/musics/di-qua-mua-ha.mp3",
+			image:
+			"./assets/img/di-qua-mua-ha.jpg"
+		},
+		{
+			name: "Phố không em",
+			singer: "Thái Đinh",
+			path: "./assets/musics/pho-khong-em.mp3",
+			image:
+			"./assets/img/pho-khong-em.jpg"
+		},
+		{
+			name: "Rồi ta sẽ ngắm pháo hoa cùng nhau",
+			singer: "O.lew",
+			path:
+			"./assets/musics/roi-ta-se-ngam-phao-hoa-cung-nhau.mp3",
+			image:
+			"./assets/img/roi-ta-se-ngam-phao-hoa-cung-nhau.jpg"
+		},
+		{
+			name: "Tự tình 2",
+			singer: "Trung Quân Idol",
+			path: "./assets/musics/tu-tinh-2.mp3",
+			image:
+			"./assets/img/tu-tinh-2.jpg"
+		},
 		{
 			name: "Anh tự do nhưng cô đơn",
 			singer: "Trung Quân Idol",
@@ -103,34 +103,34 @@ const app = {
 			path: "./assets/musics/duong-toi-cho-em-ve.mp3",
 			image:
 			"./assets/img/duong-toi-cho-em-ve.jpg"
-		},
-    ],
+		}
+	],
 
 	setConfig: function(key, value) {
 		this.config[key] = value;
 		localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config));
 	},
 
-    render: function() {
+	render: function() {
 		randomBtn.classList.toggle('active', this.isRandom);
 		repeatBtn.classList.toggle('active', this.isRepeated);
-        const htmls = this.songs.map((song, index) => {
-            return `
-            <div class="song ${index === this.currentIndex ? 'active' : ''}">
-                <div class="thumb" style="background-image: url('${song.image}')">
-                </div>
-                <div class="body">
-                    <h3 class="title">${song.name}</h3>
-                    <p class="author">${song.singer}</p>
-                </div>
-                <div class="option">
-                    <i class="fas fa-ellipsis-h"></i>
-                </div>
-            </div>
-            `
-        })
-        playlist.innerHTML = htmls.join('')
-    },
+		const htmls = this.songs.map((song, index) => {
+			return `
+			<div class="song ${index === this.currentIndex ? 'active' : ''}">
+				<div class="thumb" style="background-image: url('${song.image}')">
+				</div>
+				<div class="body">
+					<h3 class="title">${song.name}</h3>
+					<p class="author">${song.singer}</p>
+				</div>
+				<div class="option">
+					<i class="fas fa-ellipsis-h"></i>
+				</div>
+			</div>
+			`
+		})
+		playlist.innerHTML = htmls.join('')
+	},
 
 	defineProperties: function() {
 		Object.defineProperty(this, 'currentSong', {
@@ -140,9 +140,9 @@ const app = {
 		})
 	},
 
-    handleEvents: function() {
+	handleEvents: function() {
 		const __this__ = this;
-        const cdWidth = cd.offsetWidth;
+		const cdWidth = cd.offsetWidth;
 		const songs = $$('.song');
 
 		// Handle spinning CD
@@ -156,13 +156,13 @@ const app = {
 		cdThumbAnimate.pause();
 
 		// Handle song thumbnail zoom in zoom out
-        document.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            const newCdWidth = cdWidth - scrollTop;
+		document.addEventListener('scroll', () => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			const newCdWidth = cdWidth - scrollTop;
 
-            cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0;
-            cd.style.opacity = newCdWidth / cdWidth;
-        });
+			cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0;
+			cd.style.opacity = newCdWidth / cdWidth;
+		});
 
 		// Handle click on play button
 		playBtn.addEventListener('click', () => {
@@ -249,8 +249,8 @@ const app = {
 				}
 			})
 		})
-    },
-	
+	},
+
 	scrollToActiveSong: function() {
 		setTimeout(() => {
 			$('.song.active').scrollIntoView({
@@ -297,23 +297,23 @@ const app = {
 		this.currentIndex = randIndex;
 		this.loadCurrentSong();
 	},
-	
-    start: function() {
+
+	start: function() {
 		// Load config of users from storage
 		this.loadConfig();
 
 		// Render playlist
-        this.render();
+		this.render();
 
 		// Define Properties for objects
 		this.defineProperties();
 
 		// Listen / Handle DOM events
-        this.handleEvents();
+		this.handleEvents();
 
 		// Load first song into UI when running app
 		this.loadCurrentSong();
-    }
+	}
 };
 
 app.start();
