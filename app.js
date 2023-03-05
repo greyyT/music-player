@@ -30,51 +30,51 @@ const app = {
         {
           name: "Ai chung tình được mãi",
           singer: "Trung Quân Idol",
-          path: "/assets/musics/ai-chung-tinh-duoc-mai.mp3",
-          image: "/assets/img/ai-chung-tinh-duoc-mai.jpg"
+          path: "./assets/musics/ai-chung-tinh-duoc-mai.mp3",
+          image: "./assets/img/ai-chung-tinh-duoc-mai.jpg"
         },
         {
           name: "Bao tiền một mớ bình yên",
           singer: "14 Casper",
-          path: "/assets/musics/bao-tien-mot-mo-binh-yen.mp3",
+          path: "./assets/musics/bao-tien-mot-mo-binh-yen.mp3",
           image:
-            "/assets/img/bao-tien-mot-mo-binh-yen.jpg"
+            "./assets/img/bao-tien-mot-mo-binh-yen.jpg"
         },
         {
           name: "Đã sai từ lúc đầu",
           singer: "Trung Quân Idol | Bùi Anh Tuấn",
           path:
-            "/assets/musics/da-sai-tu-luc-dau.mp3",
-          image: "/assets/img/da-sai-tu-luc-dau.jpg"
+            "./assets/musics/da-sai-tu-luc-dau.mp3",
+          image: "./assets/img/da-sai-tu-luc-dau.jpg"
         },
         {
           name: "Đi qua mùa hạ",
           singer: "Thái Đinh",
-          path: "/assets/musics/di-qua-mua-ha.mp3",
+          path: "./assets/musics/di-qua-mua-ha.mp3",
           image:
-            "/assets/img/di-qua-mua-ha.jpg"
+            "./assets/img/di-qua-mua-ha.jpg"
         },
         {
           name: "Phố không em",
           singer: "Thái Đinh",
-          path: "/assets/musics/pho-khong-em.mp3",
+          path: "./assets/musics/pho-khong-em.mp3",
           image:
-            "/assets/img/pho-khong-em.jpg"
+            "./assets/img/pho-khong-em.jpg"
         },
         {
           name: "Rồi ta sẽ ngắm pháo hoa cùng nhau",
           singer: "O.lew",
           path:
-            "/assets/musics/roi-ta-se-ngam-phao-hoa-cung-nhau.mp3",
+            "./assets/musics/roi-ta-se-ngam-phao-hoa-cung-nhau.mp3",
           image:
-            "/assets/img/roi-ta-se-ngam-phao-hoa-cung-nhau.jpg"
+            "./assets/img/roi-ta-se-ngam-phao-hoa-cung-nhau.jpg"
         },
         {
           name: "Tự tình 2",
           singer: "Trung Quân Idol",
-          path: "/assets/musics/tu-tinh-2.mp3",
+          path: "./assets/musics/tu-tinh-2.mp3",
           image:
-          "/assets/img/tu-tinh-2.jpg"
+          "./assets/img/tu-tinh-2.jpg"
         }
     ],
 
