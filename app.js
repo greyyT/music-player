@@ -81,28 +81,28 @@ const app = {
 			singer: "Trung Quân Idol",
 			path: "./assets/musics/anh-tu-do-nhung-co-don.mp3",
 			image:
-			"./assets/anh-tu-do-nhung-co-don.jpg"
+			"./assets/img/anh-tu-do-nhung-co-don.jpg"
 		},
 		{
 			name: "Yêu người có ước mơ",
 			singer: "Bùi Trường Linh",
 			path: "./assets/musics/yeu-nguoi-co-uoc-mo.mp3",
 			image:
-			"./assets/yeu-nguoi-co-uoc-mo.jpg"
+			"./assets/img/yeu-nguoi-co-uoc-mo.jpg"
 		},
 		{
 			name: "Dù cho mai về sau",
 			singer: "Bùi Trường Linh",
 			path: "./assets/musics/du-cho-mai-ve-sau.mp3",
 			image:
-			"./assets/du-cho-mai-ve-sau.jpg"
+			"./assets/img/du-cho-mai-ve-sau.jpg"
 		},
 		{
 			name: "Đường tôi chở em về",
 			singer: "Bùi Trường Linh",
 			path: "./assets/musics/duong-toi-cho-em-ve.mp3",
 			image:
-			"./assets/duong-toi-cho-em-ve.jpg"
+			"./assets/img/duong-toi-cho-em-ve.jpg"
 		},
     ],
 
